@@ -1,0 +1,1 @@
+,created_at,id,retweeted_status.created_at,retweeted_status.retweet_count,retweeted_status.user.followers_count,retweeted_status.user.id,text,user.followers_count,user.friends_count,user.id,user.screen_name,Time Difference,Weight,size,user_id,cap,content_score,friend_score,network_score,sentiment_score,english_score,universal_score,bot_english
