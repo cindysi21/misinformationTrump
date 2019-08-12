@@ -30,7 +30,7 @@ for i in INDICES:
     cleanDF['user.id'] = cleanDF['user.id'].astype('str')
 
     #Edge CSV does not need first row which is the original tweet
-    edge = cleanDF.iloc[1:]
+    edge = cleanDF.iloc[]
     #Node CSV does not need Target & Source, only needs id
     node = cleanDF.drop(columns = ['Target', 'Source'])
 

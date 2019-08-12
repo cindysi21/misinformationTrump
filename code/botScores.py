@@ -19,7 +19,7 @@ bom = botometer.Botometer(botometer_api_url=botometer_api_url,
                           wait_on_ratelimit=True,
                           mashape_key=mashape_key,
                           **twitter_app_auth)
-DATA = ['1125']
+DATA = ['1127', '986']
 
 for INDEX in DATA:
     COUNT = 1
@@ -39,8 +39,8 @@ for INDEX in DATA:
 
     total = len(accounts)
     for account in accounts:
-            if COUNT >= 10000:
-                break
+            if COUNT == 10000:
+                df.to_csv("data" + INDEX + "/user_data_half.csv")               #failsafe to save information
             try:
                 result = bom.check_account(account)
                 add = {"user_id": str(account), "cap": result["cap"]["universal"],
